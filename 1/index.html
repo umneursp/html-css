@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <Title></Title>
+    <Script src="Test.js"></Script>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          width: 300px;
+          height: 300px;
+          padding: 10px;
+        }
+        
+        .grid-item {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .t {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello World</p>
+    <img src="images/Ragu.jpeg" width="80px" />
+    <img src="https://cdn.discordapp.com/attachments/1262388826350026773/1270639414665543762/IMG_2850.png?ex=66c397eb&is=66c2466b&hm=398746d06da27f67ecd20adea2a49d7e6aeaca09dee068bf4be8adc98a568700&"
+        width="200px" />
+        <button onclick="main()">about me</button>
+    <div  class="t">
+        <div id="out" class="grid-item"> </div>
+    </div>
+    <div class="grid-container">
+        <div id="out1" class="grid-item" onclick="document.getElementById('out1').innerHTML = 'X'">1</div>
+        <div id="out2" class="grid-item" onclick="document.getElementById('out2').innerHTML = 'X'">2</div>
+        <div id="out3" class="grid-item" onclick="document.getElementById('out3').innerHTML = 'X'">3</div>
+        <div id="out4" class="grid-item" onclick="document.getElementById('out4').innerHTML = 'X'">4</div>
+        <div id="out5" class="grid-item" onclick="document.getElementById('out5').innerHTML = 'X'">5</div>
+        <div id="out6" class="grid-item" onclick="document.getElementById('out6').innerHTML = 'X'">6</div>
+        <div id="out7" class="grid-item" onclick="document.getElementById('out7').innerHTML = 'X'">7</div>
+        <div id="out8" class="grid-item" onclick="document.getElementById('out8').innerHTML = 'X'">8</div>
+        <div id="out9" class="grid-item" onclick="document.getElementById('out9').innerHTML = 'X'">9</div>
+    </div>
+    
+</body>
