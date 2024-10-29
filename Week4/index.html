@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=div, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-           margin: 0px;
-           padding: 0px;
-           font-size: 40px;
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
-        div {
-            background-color: aqua;
+        .box {
+            width: 150px;
+            height: 150px;
+            font-size: 80px;
         }
 
-        .first {
-            margin: 0px;
-            color: white;
+        #box1 {
+            background-color: hsl(0, 100%, 70%);
         }
 
-        #div1 {
-            background-color: blue;
-            padding: 10px;
-            border: 30px solid orange;
-            margin: 60px;
+        #box2 {
+            background-color: hsl(52, 100%, 70%);
         }
 
-        #div2 {
-            background-color: red;
+        #box3 {
+            background-color: hsl(111, 100%, 70%);
+        }
+
+        #box4 {
+            background-color: hsl(201, 100%, 70%);
         }
     </style>
 </head>
+
 <body>
-    <div id="div1" class="first">box one</div>
-    <div id="div2" class="first">box two</div>
-    <div id="div3" class="other">box three</div>
+    <div class="container">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+    </div>
 </body>
+
 </html>
