@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* div {
+            background-color: brown;
+        } */
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 16px 60px 8px 24px;
+            background-color: rgb(223, 223, 223);
+        }
+
+        #titleDiv {
+            padding: 8px;
+            flex: 1;
+        }
+
+        a {
+            font-size: 18px;
+        }
+
+        .logo {
+            background-color: red;
+            font-size: 30px;
+            width: 128px;
+            min-width: 128px;
+            height: 128px;
+        }
+
+        #navbar {
+            /* background-color: aqua; */
+            min-width: fit-content;
+            /* align-self: stretch; */
+        }
+
+        .navPill {
+            display: inline;
+            padding: 2px;
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                logo
+            </div>
+            <div id="titleDiv">
+                <h1>Title</h1>
+            </div>
+            <nav id="navbar">
+                <li class="navPill"><a href="#">Home</a></li>
+                <li class="navPill"><a href="#">About Us</a></li>
+                <li class="navPill"><a href="#">Services</a></li>
+                <li class="navPill"><a href="#">Contact</a></li>
+            </nav>
+        </header>
+        <div>
+            <p>Hello World</p>
+        </div>
+    </div>
+</body>
+
+</html>
