@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: rgb(135, 8, 185);
+            padding: 0px 16px 0px 12px;
+            height: 100px;
+            color: white;
+            font-size: 3rem;
+        }
+
+        main {
+            display: flex;
+            font-size: 3rem;
+            flex: 1;
+        }
+
+        footer {
+            justify-self: flex-end;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(124, 222, 255);
+            height: 50px;
+        }
+
+        #page-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0px;
+            font-size: 1rem;
+        }
+
+
+        .title {
+            margin: 5px;
+            flex: 1;
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            flex: 2;
+        }
+
+        .x {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+
+        .square {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+        }
+
+        .input-search {
+            border-radius: 10px;
+            border: none;
+        }
+
+        .content {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .menu {
+            background-color: red;
+            color: white;
+            width: 200px;
+            text-align: center;
+        }
+
+        .div1 {
+            background-color: lightblue;
+        }
+
+        .div2 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-container">
+        <header>
+            <div class="title">Home</div>
+            <div class="search">
+                <input type="text" class="input-search" placeholder="Search">
+            </div>
+            <div class="x">
+                <div class="square"></div>
+            </div>
+        </header>
+        <main>
+            <aside class='menu'>Menu</aside>
+            <section class='content'>Content</section>
+        </main>
+        <footer>
+            <div class="div1">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class='div2'>copyright</div>
+            <div></div>
+        </footer>
+    </div>
+</body>
+
+</html>
