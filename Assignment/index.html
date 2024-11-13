@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Penguin Publishing</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            background-color: hsl(0, 0%, 95%);
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            background-color: rgb(120, 236, 188);
-        }
-
-        .navbar {
-            display: flex;
-            list-style: none;
-        }
-
-        .navPill {
-            padding: 2px;
-            margin: 4px;
-        }
-
-        #titleDiv {
-            margin-left: 16px;
-            padding: 8px;
-            flex: 1;
-        }
-
-        #logo {
-            width: 96px;
-            height: 96px;
-            font-size: 50px;
-            background-color: red;
-        }
-    </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div id="logo">
-                logo
+    <div class="page-container">
+        <header class="page-header bar">
+            <div class="flex-container">
+                <div id="logo">
+                    logo
+                </div>
+                <div class="page-title">
+                    <h1>Penguin</h1>
+                </div>
             </div>
-            <div id="titleDiv">
-                <h1>Title</h1>
-            </div>
-            <nav class="navbar">
-                <li class="navPill"><a href="#">Home</a></li>
-                <li class="navPill"><a href="#">About Us</a></li>
-                <li class="navPill"><a href="#">Services</a></li>
-                <li class="navPill"><a href="#">Contact</a></li>
+            <nav class="flex-container">
+                <ul class="primary-nav">
+                    <li class="nav-item" id="current-page">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main>
-            <section class="">
+            <section>
                 <h1>Welcome</h1>
                 <p>Hello World</p>
             </section>
         </main>
+        <footer class="bar">
+            <div id="icons" class="flex-container">
+                Icons
+            </div>
+            <div id="copyright" class="flex-container">
+                Copyright © Penguin 2024
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
