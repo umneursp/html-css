@@ -1,13 +1,8 @@
-#logo {
-    background-color: red;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    line-height: 80px;
-    font-size: 35px;
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box
 }
-
-
 
 
 
@@ -27,10 +22,6 @@ body {
     font-size: 1.5rem;
 }
 
-h1 {
-    text-align: center;
-}
-
 a:link,
 a:visited {
     color: inherit;
@@ -39,13 +30,9 @@ a:visited {
 
 
 section {
-    padding: 8px
-}
-
-.page-container {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    max-width: 1700px;
+    padding: 8px;
+    margin: 15px;
 }
 
 .bar {
@@ -92,6 +79,7 @@ section {
 .call-to-action {
     font-size: 1.3rem;
     font-weight: 600;
+    margin: auto;
     padding: 4px 6px;
     border: 2px solid black;
     border-radius: 8px;
@@ -102,6 +90,44 @@ section {
     background-color: rgb(224, 224, 224);
 }
 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 430px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 
@@ -137,14 +163,17 @@ main {
 
 
 
-
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
 
 .page-footer {
     position: absolute;
     background-color: rgb(209, 209, 209);
-    box-sizing: border-box;
-    bottom: 0px;
     padding: 12px;
+    bottom: 0px;
+
 }
 
 .footer-text {
@@ -157,4 +186,16 @@ main {
     .nav-item {
         margin: 1px;
     }
+}
+
+
+
+
+#logo {
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
 }
